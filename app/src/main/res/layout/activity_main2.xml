@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="25dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/menu_button"
+            android:contentDescription="@string/menub_img" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="25dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/home_button"
+            android:contentDescription="@string/homeb_img" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="25dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/shop_button"
+            android:contentDescription="@string/shopb_img" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/reserve_a_table"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/date_"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/date"
+            android:inputType="date"
+            android:textColorHint="@color/crunch" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/time_"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextTime"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/time"
+            android:inputType="time"
+            android:textColorHint="@color/crunch" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/number_of_diners"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/no_of_diners"
+            android:inputType="number"
+            android:textColorHint="@color/crunch" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_information"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/first_name_"
+                android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextText2"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/first_name"
+            android:inputType="text"
+            android:textColorHint="@color/crunch" />
+
+        <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/last_name_"
+                android:textSize="20sp" />
+
+        <EditText
+                android:id="@+id/editTextText3"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/last_name"
+                android:inputType="text"
+                android:textColorHint="@color/crunch" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/email_address"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/crunch" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_no"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="@string/phone_number"
+            android:inputType="phone"
+            android:textColorHint="@color/crunch"
+            android:autofillHints="" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/is_required" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="25dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/menu_button"
+            android:contentDescription="@string/menub_img" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="25dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/home_button"
+            android:contentDescription="@string/homeb_img" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="25dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/shop_button"
+            android:contentDescription="@string/shopb_img" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textview"
+                android:textColor="@color/punch"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/patna"
+                android:textColor="@color/crunch"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/content"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reserve_a_table"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/food_image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            android:contentDescription="@string/main_img" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/out_for_delivery"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/starter" />
+
+            <RadioButton
+                android:id="@+id/radioButton6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lunch" />
+
+            <RadioButton
+                android:id="@+id/radioButton7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dinner" />
+
+            <RadioButton
+                android:id="@+id/radioButton8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dessert" />
+
+            <RadioButton
+                android:id="@+id/radioButton9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/drinks" />
+
+            <RadioButton
+                android:id="@+id/radioButton10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/extras" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+        app:layout_constraintVertical_bias="0.5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/foodContent" />
+
+                    <TextView
+                        android:id="@+id/textView30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/price1" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/shushi_image"
+                    android:contentDescription="@string/shushi_img" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/foodContent2" />
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/price2" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/buns_image"
+                    android:contentDescription="@string/momo_img" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/foodContent3" />
+
+                    <TextView
+                        android:id="@+id/textView32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/price4" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/knoodels_image"
+                    android:contentDescription="@string/noodles_img" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/foodContent4" />
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/price3" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/napoleanpizza_image"
+                    android:contentDescription="@string/napolean_pizza_img" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
